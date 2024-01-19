@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Tic-Tac-Toe</title>
+		<link rel='stylesheet' href='cssFile.css'>
+	</head>
+	<body>
+		<section>
+			<div>
+				<div class="main">
+					<div class="row">
+						Welcome to Tic-Tac-Toe
+					</div>
+					<div class="row">
+						<div id="game_turn">
+							Player X
+						</div>
+					</div>
+					<div class="row">
+						<div id="play_again">
+							<button type="button" onclick="resetFunc()" >Play again</button>
+							<button type="button" onclick="chooseOpponent('2ndPlayer')">2nd Player</button>
+							<button type="button" onclick="chooseOpponent('Computer')">Computer</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="main1">
+					<div class="row">
+						<div class="main1a row1">
+							<div class="row num" onmouseover="MouserOver(this)" onmouseout="MouserOut(this)" onclick="play('col1row1')"><div id="col1row1" class="cell_id"></div></div>
+							<div class="row num" onmouseover="MouserOver(this)" onmouseout="MouserOut(this)" onclick="play('col2row1')"><div id="col2row1" class="cell_id" ></div></div>
+							<div class="row num bor" onmouseover="MouserOver(this)" onmouseout="MouserOut(this)" onclick="play('col3row1')"><div id="col3row1" class="cell_id"></div></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="main1a row2">
+							<div class="row num" onmouseover="MouserOver(this)" onmouseout="MouserOut(this)" onclick="play('col1row2')"><div id="col1row2" class="cell_id"></div></div>
+							<div class="row num" onmouseover="MouserOver(this)" onmouseout="MouserOut(this)" onclick="play('col2row2')"><div id="col2row2" class="cell_id"></div></div>
+							<div class="row num bor" onmouseover="MouserOver(this)" onmouseout="MouserOut(this)" onclick="play('col3row2')"><div id="col3row2" class="cell_id"></div></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="main1a row3">
+							<div class="row num" onmouseover="MouserOver(this)" onmouseout="MouserOut(this)" onclick="play('col1row3')"><div id="col1row3" class="cell_id"></div></div>
+							<div class="row num" onmouseover="MouserOver(this)" onmouseout="MouserOut(this)" onclick="play('col2row3')"><div id="col2row3" class="cell_id"></div></div>
+							<div class="row num bor" onmouseover="MouserOver(this)" onmouseout="MouserOut(this)" onclick="play('col3row3')"><div id="col3row3" class="cell_id"></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<script src="jsFile.js"></script>
+	</body>
+</html>
